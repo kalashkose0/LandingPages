@@ -1,0 +1,144 @@
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: "Gilroy";
+        }
+        
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+        }
+        
+        #main {
+            display: flex;
+            height: 100%;
+            background-color: white;
+        }
+        
+        #left {
+            position: relative;
+            width: 40%;
+            height: 100%;
+            /* background-color: white; */
+        }
+        
+        #lnav {
+            display: flex;
+            justify-content: space-between;
+            /* justify-content: space-between; */
+            padding: 20px 30px;
+        }
+        
+        #lnavr {
+            display: flex;
+            align-items: center;
+        }
+        
+        #lnavr>a {
+            margin-right: 20px;
+            text-decoration: wavy;
+            color: black;
+            font-weight: 500;
+            font-size: 14px;
+        }
+        
+        #left #textcenter {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        #textcenter h1 {
+            font-size: 100px;
+            font-weight: 900;
+            font-weight: bold;
+            padding-bottom: 20px;
+            list-style: none;
+            line-height: 80px;
+            background-image: url(https://images.unsplash.com/photo-1605027990121-cbae9e0642df?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+            /* background-image: url(https://media.istockphoto.com/id/182862637/photo/sliced-mangos.jpg?s=1024x1024&w=is&k=20&c=UIL2Z-d4Xe3TGgy22xmbB45ERmmBKmdyMnVkV325mtw=); */
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-position: center;
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+        
+        #textcenter p {
+            opacity: .6;
+            font-size: 20px;
+            line-height: 20px;
+            margin-bottom: 20px;
+            padding-bottom: 1px;
+        }
+        /* #textcenter p {
+            opacity: .6;
+            font-size: 20px;
+            line-height: 20px;
+            margin-bottom: 20px;
+            padding-bottom: 1px;
+        }
+         */
+        
+        #textcenter p br {
+            /* opacity: .6; */
+            font-size: 30px;
+            line-height: 20px;
+            margin-bottom: 20px;
+        }
+        
+        #textcenter a {
+            text-decoration: none;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.626);
+            padding: 9px 15px;
+            border-radius: 25px;
+            /* border-bottom: 1.5px solid #000; */
+            padding-bottom: 5px;
+            font-size: 13px;
+            font-weight: 600;
+            /* opacity: .6; */
+        }
+        
+        #right {
+            width: 60%;
+            height: 100%;
+            /* background-color: yellow; */
+        }
+        
+        #rtop {
+            display: flex;
+            width: 100%;
+            height: 50%;
+            background-color: blue;
+        }
+        
+        #rbottom {
+            width: 100%;
+            height: 50%;
+            /* background-color: red; */
+            background-image: url(https://images.unsplash.com/photo-1622495725836-e06fe8ffa7fc?q=80&w=1820&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+            background-size: 680px;
+            background-position: center;
+        }
+        
+        #rtopleft {
+            width: 55%;
+            height: 100%;
+            /* background-color: yellowgreen; */
+            background-image: url(https://media.istockphoto.com/id/1087695674/photo/delicious-indian-alphonso-mangoes.jpg?s=612x612&w=0&k=20&c=5NYv1HQPo5_xeen7-cEk3DKSc33EwZ5qYZdJoUFD40k=);
+            background-size: cover;
+            background-position: center;
+        }
+        
+        #rtopright {
+            width: 45%;
+            height: 100%;
+            /* background-color: blue; */
+            background-image: url(https://images.unsplash.com/photo-1591073113125-e46713c829ed?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+            background-size: cover;
+            background-position: center;
+            /* image-rendering: auto; */
+        }

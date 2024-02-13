@@ -1,0 +1,166 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #eb0026;
+}
+
+.logo {
+    position: relative;
+    width: 300px;
+    height: 300px;
+}
+
+.logo span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.logo span:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 25px;
+    background: #fff;
+    transform-origin: left;
+    transform: scaleX(0);
+    animation: animate .5s linear forwards;
+}
+
+.logo span:nth-child(1) {
+    transform: rotate(0deg);
+}
+
+.logo span:nth-child(2) {
+    transform: rotate(90deg);
+}
+
+.logo span:nth-child(3) {
+    transform: rotate(180deg);
+}
+
+.logo span:nth-child(4) {
+    transform: rotate(270deg);
+}
+
+@keyframes animate {
+    0% {
+        transform: scaleX(0);
+    }
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+.logo span:nth-child(1):before {
+    animation-delay: 1s;
+}
+
+.logo span:nth-child(2):before {
+    animation-delay: 1.5s;
+}
+
+.logo span:nth-child(3):before {
+    animation-delay: 2s;
+}
+
+.logo span:nth-child(4):before {
+    animation-delay: 2.5s;
+}
+
+.plus {
+    position: absolute;
+    top: calc(-50% + 80px);
+    right: calc(-50% + 80px);
+    width: 160px;
+    height: 160px;
+    box-sizing: border-box;
+    border: 25px solid #eb0026;
+}
+
+.plus:before {
+    content: '';
+    position: absolute;
+    top: calc(50% - 10px);
+    left: 0;
+    width: 100%;
+    height: 25px;
+    background: #fff;
+    transform-origin: left;
+    transform: scaleX(0);
+    animation: animate .5s linear forwards;
+}
+
+.plus:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: calc(50% - 14px);
+    width: 25px;
+    height: 100%;
+    background: #fff;
+    transform-origin: top;
+    transform: scaleY(0);
+    animation: animate2 .5s linear forwards;
+    animation-delay: 0.5s;
+}
+
+@keyframes animate2 {
+    0% {
+        transform: scaleY(0);
+    }
+    100% {
+        transform: scaleY(1);
+    }
+}
+
+.One {
+    position: absolute;
+    top: calc(50% - 75px);
+    left: calc(50% - 37.5px);
+    width: 75px;
+    height: 150px;
+    background: #fff;
+    animation: animate3 1s linear forwards;
+    animation-delay: 3s;
+    opacity: 0;
+}
+
+.One:before {
+    content: '';
+    position: absolute;
+    top: 25px;
+    bottom: 25px;
+    width: 25px;
+    background: #eb0026;
+}
+
+.One:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 25px;
+    right: 0;
+    width: 25px;
+    background: #eb0026;
+}
+
+@keyframes animate3 {
+    0% {
+        opacity: 0;
+        transform: scale(2);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
